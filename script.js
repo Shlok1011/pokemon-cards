@@ -24,23 +24,23 @@ function createCard(name,img) {
     const card = document.createElement('div');
     card.classList.add('card');
 
-    // Create a card body
+    
     const cardBody = document.createElement('div');
     cardBody.classList.add('card-body');
     card.appendChild(cardBody);
 
     const cardTitle = document.createElement("h2");
-    cardTitle.textContent = name; // Set the title of the card to the pokemon's name
+    cardTitle.textContent = name;
     cardTitle.classList.add("card-title");
     cardBody.appendChild(cardTitle);
 
     const cardContent = document.createElement("img");
-    cardContent.setAttribute("src",img); // Set the content of the card
+    cardContent.setAttribute("src",img);
     cardBody.appendChild(cardContent);
 
-    // Append the card to the container
+
     container.appendChild(card);
 }
 
-// Example: Call getUrl() to trigger the API call and card creation
+
 getUrl();
